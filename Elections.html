@@ -291,7 +291,7 @@ function onBeepComplete() {
       card.className = "card";
       card.innerHTML = `
         <img src="${candidate.image}" alt="${candidate.name}" />
-        <h5>${candidate.name} - ${candidate.party}</h5>        
+        <h5>${candidate.name}</h5>        
         <button ${disabled ? "disabled" : `onclick="vote(${candidate.id})"`}>Vote</button>
       `;
       grid.appendChild(card);
